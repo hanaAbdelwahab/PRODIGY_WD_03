@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="TicTacToe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Tic Tac Toe</title>
+   
+</head>
+<body>
+    <header class="header">
+        <div class="icons">
+            <i id="modeicon" title="Mode" class="fa-solid fa-circle-half-stroke" onclick="toggleDarkMode()"></i>
+            <i id="fullscreenicon" title="Full Screen" class="fa-solid fa-expand" onclick="toggleFullScreen()"></i>
+        </div>
+    </header>
+    <div class="container">
+        <div class="score">
+            <span class="player1score"></span>
+            <span class="player2score"></span>
+        </div>
+        <div class="gamefield">
+            <div class="cells">
+                <span class="cell"></span>
+                <span class="cell"></span>
+                <span class="cell"></span>
+            </div>
+            <div class="cells">
+                <span class="cell"></span>
+                <span class="cell"></span>
+                <span class="cell"></span>
+            </div>
+            <div class="cells">
+                <span class="cell"></span>
+                <span class="cell"></span>
+                <span class="cell"></span>
+            </div>
+        </div>
+        <div id="notification" class="notification"></div>
+        <audio id="winsound" src="win.mp3" ></audio>
+        <audio id="failsound" src="fail.mp3" ></audio>
+        <div class="newgame">
+            <button class="restart">Restart</button>
+            <div class="icon-container">
+                <i id="playerIcon" class="fa-solid fa-robot" title="With the computer"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="TicTacToe.js"></script>
+</body>
+</html>
